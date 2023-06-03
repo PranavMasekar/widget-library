@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:widget_library/widgets/text_field.dart';
+
+import 'widgets/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,19 @@ class MyHomePage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 20.h),
         child: Center(
-          child: useTextField(),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              useTextField(),
+              SizedBox(height: 15.h),
+              useDropDown(),
+              SizedBox(height: 15.h),
+              useDashRectangle(),
+              SizedBox(height: 15.h),
+              useLoading(),
+              SizedBox(height: 15.h),
+            ],
+          ),
         ),
       ),
     );

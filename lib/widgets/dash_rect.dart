@@ -126,7 +126,7 @@ Widget useDashRectangle() {
     child: Container(
       height: 50.h,
       width: 150.w,
-      color: Colors.amber,
+      color: Colors.white,
     ),
   );
 }

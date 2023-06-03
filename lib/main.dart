@@ -36,18 +36,24 @@ class MyHomePage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 20.h),
         child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              useTextField(),
-              SizedBox(height: 15.h),
-              useDropDown(),
-              SizedBox(height: 15.h),
-              useDashRectangle(),
-              SizedBox(height: 15.h),
-              useLoading(),
-              SizedBox(height: 15.h),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                useTextField(),
+                SizedBox(height: 15.h),
+                useDropDown(),
+                SizedBox(height: 15.h),
+                useDashRectangle(),
+                SizedBox(height: 15.h),
+                useLoading(),
+                SizedBox(height: 15.h),
+                useDashLine(),
+                SizedBox(height: 15.h),
+                useGradientText(),
+                SizedBox(height: 15.h),
+              ],
+            ),
           ),
         ),
       ),
